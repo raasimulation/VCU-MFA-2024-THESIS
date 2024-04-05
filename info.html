@@ -1,0 +1,133 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Information</title>
+    <script src="p5.js"></script>
+    <script src="p5.min.js"></script>
+    <script src="sketch-info.js"></script>
+    <style>
+        @font-face {
+            font-family: Editorial New;
+            src: url('EditorialT.otf');
+        }
+
+        * {
+            overflow: hidden;
+            cursor: none;
+        }
+
+        canvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+
+        .header {
+            color: azure;
+            mix-blend-mode: difference;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: space-between;
+            padding-left: 20px;
+            padding-right: 20px;
+            font-family: Editorial New;
+        }
+
+        .header-back {
+            display: flex;
+            flex-direction: row;
+            gap: 20px;
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        a:visited {
+            color: white;
+            mix-blend-mode: difference;
+        }
+
+        #bg-video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: fixed;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            z-index: -2;
+        }
+
+        @media screen and (max-width: 600px) {
+            body {
+                background-color: black;
+                overflow: auto;
+            }
+
+            canvas {
+                width: auto;
+                height: fit-content;
+            }
+
+            .header {
+                color: azure;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: space-between;
+                padding-left: 8px;
+                padding-right: 8px;
+                font-family: Editorial New;
+            }
+
+            .header-back {
+                display: flex;
+                flex-direction: row;
+                gap: 20px;
+            }
+
+            h1 {
+                mix-blend-mode: difference;
+                font-size: 20px;
+            }
+
+            h2 {
+                mix-blend-mode: difference;
+                color: white;
+            }
+
+            video {
+                width: auto;
+                height: 100%;
+            }
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="bg-video"><video preload autoplay loop muted src="4.mp4" width="100%"></video></div>
+    <div class="header">
+        <div class="header-back">
+            <h1><a href="index.html">&#8592;</a></h1>
+            <h1>Information about 2024 MFA Thesis Exhibition</h1>
+        </div>
+        <h2>The 2024 MFA Thesis Exhibition features 33 outstanding emerging artists and designers. Representing eight
+            departments, these students’ ambitious and challenging research pushes beyond traditional disciplines to
+            shape what is new and next in visual and material culture. </h2>
+        <h2>The MFA Thesis Exhibition is held at The Anderson (907 ½W Franklin St, Richmond) and takes place in two
+            rounds: </h2>
+        <h2>Round 1: April 5–April 19, Opening Reception: April 5, 5–8 p.m. 
+            <br>Round 2: April 26–May 11, Opening Reception: April 26, 5–8 p.m.
+        </h2>
+
+</body>
+
+</html>

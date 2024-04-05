@@ -1,0 +1,287 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VCUarts 2024 MFA Thesis Exhibition</title>
+    <script src="p5.js"></script>
+    <script src="p5.min.js"></script>
+    <script src="sketch.js"></script>
+    <style>
+        @font-face {
+            font-family: Editorial New;
+            src: url('EditorialT.otf');
+        }
+
+        * {
+            cursor: none;
+        }
+
+        canvas {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+
+        .header {
+            color: white;
+            display: flex;
+            flex-direction: row;
+            align-items: flex-start;
+            justify-content: space-between;
+            padding-left: 20px;
+            padding-right: 20px;
+            font-family: Editorial New;
+        }
+
+        .bottom {
+            color: white;
+            display: flex;
+            flex-direction: row;
+            align-items: start;
+            padding-left: 20px;
+            padding-right: 20px;
+            font-family: Editorial New;
+            gap: 20%;
+        }
+
+        .round1 {
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+            gap: 10%;
+        }
+
+        .round2 {
+            display: flex;
+            align-items: flex-start;
+            flex-direction: column;
+            gap: 10%;
+        }
+
+        .people-list {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .people-list h1 {
+            margin-bottom: 2px;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+
+        a:hover {
+            color: #ff1fa5;
+            text-decoration: overline;
+        }
+
+        video {
+            width: 80px;
+            height: 80px;
+        }
+
+        @media screen and (max-width: 600px) {
+            body {
+                background-color: black;
+                overflow: auto;
+            }
+
+            canvas {
+                width: auto;
+                height: fit-content;
+            }
+
+            .header {
+                color: white;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                justify-content: space-between;
+                padding-left: 8px;
+                padding-right: 8px;
+                font-family: Editorial New;
+            }
+
+            h1 {
+                font-size: 20px;
+            }
+
+            video {
+                width: 40px;
+                height: 40px;
+            }
+
+            .bottom {
+                color: white;
+                display: flex;
+                flex-direction: column;
+                align-items: start;
+                padding-left: 8px;
+                padding-right: 8px;
+                font-family: Editorial New;
+                gap: 20%;
+            }
+
+            .round1 {
+                display: flex;
+                align-items: flex-start;
+                flex-direction: column;
+                gap: 5%;
+            }
+
+            .round2 {
+                margin-top: 20px;
+                display: flex;
+                align-items: flex-start;
+                flex-direction: column;
+                gap: 5%;
+            }
+
+            .people-list h1 {
+                margin-bottom: 6px;
+            }
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <script src="sketch.js"></script>
+    <div class="header">
+        <h1>2024 MFA Thesis Exhibition</h1>
+        <video preload autoplay loop muted src="1.mp4"></video>
+        <a href="https://arts.vcu.edu" target="_blank" rel="noopener noreferrer">
+            <h1>Virginia Commonwealth University School of the Arts</h1>
+        </a>
+        <video preload autoplay loop muted src="3.mp4"></video>
+        <a href="info.html">
+            <h1>Info</h1>
+        </a>
+        <video preload autoplay loop muted src="2.mp4"></video>
+    </div>
+    <div class="bottom">
+        <div class="round1">
+            <h1>Round 1 // April 5 - 19</h1>
+
+            <div class="people-list">
+                <a href="https://barleyxcx.github.io">
+                    <h1>Bradley Sinanan</h1>
+                </a>
+                <a href="https://chelsearowedesign.com/">
+                    <h1>Chelsea Nanfelt Rowe</h1>
+                </a>
+                <a href="https://www.chrystinerayburn.com/">
+                    <h1>Chrystine Rayburn</h1>
+                </a>
+                <a href="https://www.instagram.com/giancarlo.a.venturini/">
+                    <h1>Giancarlo Venturini</h1>
+                </a>
+                <a href="https://www.instagram.com/giladleiba/?hl=en">
+                    <h1>Gilad Leiba</h1>
+                </a>
+                <a href="https://www.instagram.com/grace__bromley/">
+                    <h1>Grace Bromley</h1>
+                </a>
+                <a href="https://www.jermaineollivierre.com/">
+                    <h1>Jermaine Ollivierre</h1>
+                </a>
+                <a href="https://leileixia.com/#home">
+                    <h1>Leilei Xia</h1>
+                </a>
+                <a href="https://www.taehee.xyz/" target="_blank" rel="noopener noreferrer">
+                    <h1>taehee</h1>
+                </a>
+                <a href="https://instagram.com/_yifei_k">
+                    <h1>Yifei Kong</h1>
+                </a>
+                <a href="https://yuanxin.art/">
+                    <h1>Yuan Xin</h1>
+                </a>
+            </div>
+        </div>
+        <div class="round2">
+            <h1>Round 2 // April 26 - May 11</h1>
+            <div class="people-list">
+                <a href="https://www.instagram.com/alexis.e.mabry/?hl=en">
+                    <h1>Alexis Mabry</h1>
+                </a>
+                <a href="https://www.instagram.com/arghavan.heydareslam">
+                    <h1>Arghavan Heydareslam</h1>
+                </a>
+                <a href="https://www.instagram.com/holy_motors_holy">
+                    <h1>Chunghee Yun</h1>
+                </a>
+                <a href="https://www.instagram.com/jalentadams/">
+                    <h1>Jalen Adams</h1>
+                </a>
+                <a href="https://www.instagram.com/jessehoyleartist/">
+                    <h1>Jesse Hoyle</h1>
+                </a>
+                <a href="https://www.instagram.com/jessicatifase/?hl=de">
+                    <h1>Jessica Tifase</h1>
+                </a>
+                <a href="https://www.instagram.com/chu.cumber">
+                    <h1>Kai Chuang</h1>
+                </a>
+                <a href="https://www.instagram.com/kc.costumedesign">
+                    <h1>Kasey Brown</h1>
+                </a>
+                <a href="https://www.instagram.com/paz.sher">
+                    <h1>Paz Sher</h1>
+                </a>
+                <a href="https://www.instagram.com/piabakala">
+                    <h1>Pia Bakala</h1>
+                </a>
+                <a href="https://www.instagram.com/peachygrenade">
+                    <h1>Rabeeha Adnan</h1>
+                </a>
+                <a href="https://www.instagram.com/shannon_kurzyniec_art">
+                    <h1>Shannon Kurzyniec</h1>
+                </a>
+                <a href="https://www.instagram.com/imnotstephanie">
+                    <h1>Stephanie Germosen Salazar</h1>
+                </a>
+            </div>
+        </div>
+        <div class="round2">
+            <h1>Interior Design</h1>
+            <div class="people-list">
+                <a href="#">
+                    <h1>Aseel Alhaidari</h1>
+                </a>
+                <a href="#">
+                    <h1>Caitlin McLean</h1>
+                </a>
+                <a href="#">
+                    <h1>Camille Rovani</h1>
+                </a>
+                <a href="#">
+                    <h1>Caroline Ciccone</h1>
+                </a>
+                <a href="#">
+                    <h1>Che'leah Shannon</h1>
+                </a>
+                <a href="#">
+                    <h1>Chelcey Dunham</h1>
+                </a>
+                <a href="#">
+                    <h1>Sarah Alrumayh</h1>
+                </a>
+                <a href="#">
+                    <h1>Sydney Rakes</h1>
+                </a>
+                <a href="#">
+                    <h1>Tommye Dean</h1>
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
